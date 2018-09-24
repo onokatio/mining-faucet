@@ -1,0 +1,90 @@
+﻿<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mininng & Faucet</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://www.google.com/recaptcha/api.js?hl=ja"></script>
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<link href="main.css" rel="stylesheet">
+</head>
+<body style="background: #555555;">
+
+<!--ロゴ-->
+<hgroup class="page-header">
+	<h1 class="title"><a href="index.html" >Mining & Faucet</a></h1>
+</hgroup>
+<!--/ロゴ-->
+<div class="panel panel-info center-block" style="width: 80%;">
+	<div class="panel-heading">
+		About
+	</div>
+	<div class="panel-body">
+		このサイトでは、一定時間ごとにハッシュレートがもらえ、そのハッシュレートで、擬似的にモナコインをもらうことができます。<br>
+		そのモナコインでさらにハッシュレートを買ってもよし、コツコツ貯めて払い出してもよし、友人と協力してプールマイニングしてもよし。	<br>
+	</div>
+</div>
+
+<div class="panel panel-success center-block" style="width: 80%;">
+	<div class="panel-heading">
+		Your Account
+	</div>
+	<div class="panel-body text-center">
+	</div>
+		<table class="table">
+		<tr>
+			<th>ユーザー名</th>
+			<td>テストユーザー1</td>
+		</tr>
+		<tr>
+			<th>残高</th>
+			<td>20Mona</td>
+		</tr>
+		<tr>
+			<th>ハッシュレート</th>
+			<td>100KHash</td>
+		</tr>
+	</table>
+</div>
+
+<div class="panel panel-default center-block" style="width: 80%;">
+	<div class="panel-heading">
+		Faucet
+	</div>
+	<div class="panel-body text-center">
+		現在、一時間に10KHash無料でもらえます。<br><br>
+		<script>
+		document.write("<a class='btn btn-success btn-lg' data-toggle='modal' data-target='#sampleModal'>ハッシュレートをもらう</a>" +
+		"<div class='modal fade' id='sampleModal' tabindex='-1'>" +
+			"<div class='modal-dialog modal-default'>" +
+				"<div class='modal-content'>" +
+					"<div class='modal-header'>" +
+						"<button type='button' class='close' data-dismiss='modal'><span>×</span></button>" +
+					"</div>" +
+					"<div class='modal-body'>" +
+						"<iframe src='givehash.html'>" +
+						"<a class='btn btn-primary' href='givehash.html'>もらう</a>" +
+						"</iframe>" +
+					"</div>" +
+				"</div>" +
+			"</div>" +
+		"</div>"
+		);
+		document.close();
+		</script>
+		<noscript>
+			<iframe src='givehash.html'><button type='submit' class='btn btn-primary'>もらう</button></iframe>
+		</noscript>
+	</div>
+</div>
+
+
+</body>
+</html>
